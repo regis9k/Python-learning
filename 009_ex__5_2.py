@@ -9,12 +9,25 @@ largest = None
 smallest = None
 while True:
     num = input("Enter a number: ")
+    if num == "done":
+        break
     try:
         num=int(num)
-        if num == "done":
-            break
-        print(num)
     except:
-        print("You didn't enter an integer")
+        print("Invalid input")
+        continue
 
-print("Maximum", largest)
+    if largest is None:
+        largest = num
+        smallest = num
+    
+    # largest
+    if num>largest:
+        largest=num
+    
+    # smallest
+    if num<smallest:
+        smallest=num
+
+print("Maximum is", largest)
+print("Minimum is", smallest)
