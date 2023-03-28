@@ -1,7 +1,9 @@
-n = int(input())
+a='abcdefgh'
 
-x=1
-while x<=n:
-    x=x+1
-    y=str(x)
-    print(y+y)
+i=len(a)-1
+while i>=0:
+    print(a[i])
+    i=i-1
+
+for j in a:
+    print(j)
