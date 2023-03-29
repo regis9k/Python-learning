@@ -1,11 +1,25 @@
-#if __name__ == '__main__':
-#    n = int(input())
+# def solve(s):
+#     s=s.strip()
+#     s=' '+s
+#     x=0
+#     for i in s:
+#         if i==' ':
+#             char=s[x+1:x+2].strip()
+#             s=s.replace(char,char.capitalize())
+        
+#         x=x+1
+#     return(s.strip())
+# print(solve('oskar dabrowski'))
 
-n=5
-k=list(range(0,n+1))
-k=str(k)
-k=k.replace(' ','')
-k=k.replace(',','')
-len=len(k)
-k=k[1:len-1]
-print(k)
+
+def solve(s):
+    s=s.strip().capitalize()
+    x=0
+    for i in s:
+        if i==' ':
+            pos=s[x+1].strip()
+            s=s.replace(pos,pos.capitalize())
+        
+        x=x+1
+    return(s.strip())
+print(solve('oskdar dabrowski sdbibiwbdi   asdbwid'))
