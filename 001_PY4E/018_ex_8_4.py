@@ -7,12 +7,13 @@
 # order as shown in the desired output.
 
 x=open('romeo.txt')
+lst=['']
 for i in x:
     line=i.split()
-    lst=['']
-    for w in i:
+    for w in line:
         if w in lst:
             continue
-        else:
-            lst.append(w)
+        lst.append(w)
+lst=lst[1:]
+lst.sort()
 print(lst)
