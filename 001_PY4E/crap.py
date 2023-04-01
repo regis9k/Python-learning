@@ -1,3 +1,7 @@
-t=['231','ada2d','3fff33r']
-t=t.sort()
+t=[1,2,3,4,5,6]
+x='asd'
+# t.append(x)
+# print(t)
+
+t=t+x
 print(t)
