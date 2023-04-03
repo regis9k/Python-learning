@@ -1,4 +1,4 @@
-s=[1,2,3,4,5]
-t=[5,6,7]
-s[2:2]=[t]
-print(s)
+import string
+strring='sn23jnfjv0ni2f,f.4;2!@#$!#%$^#$%#$'
+pnc=string.punctuation
+print(pnc)
