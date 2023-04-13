@@ -1,4 +1,2 @@
-import string
-strring='sn23jnfjv0ni2f,f.4;2!@#$!#%$^#$%#$'
-pnc=string.punctuation
-print(pnc)
+import bs4
+print(bs4)
